@@ -3,7 +3,7 @@
  * @Author: jianguo
  * @Date: 2022-10-13 20:39:55
  * @LastEditors: jianguo
- * @LastEditTime: 2022-10-14 10:07:57
+ * @LastEditTime: 2022-11-03 16:22:22
  */
 import React, { useState } from "react";
 import Counter from "./Counter";
@@ -11,7 +11,7 @@ import CounterHooks from "./counterHooks";
 
 export const ThemeContext = React.createContext()
 function App() {
-    const [theme, setTheme] = useState('red')
+    const [theme, setTheme] = useState('green')
     return (
         <ThemeContext.Provider value={{ background: theme }}>
             <div>计数器：</div>
